@@ -7,6 +7,7 @@ Current Minecraft version: **26.3** (Fabric Loader 0.19.5, Fabric API 0.163.0).
 | Mod | Description |
 |---|---|
 | [template](template/) | Starter mod to copy when making a new one. |
+| [mobduplicator](mobduplicator/) | Mob drops become random items, each multiplied by a random amount. Change the range with `/mobduplicator multiplier <min> <max>`. |
 
 Each mod lives in its own folder, named after its mod ID.
 
@@ -17,7 +18,19 @@ git clone https://github.com/RividuPesara/Stupid-minecraft-mods
 cd Stupid-minecraft-mods
 ```
 
-Requires JDK 25.
+You need JDK 25. The easiest way is the dev container below, which sets it up for you.
+
+### Using the dev container
+
+1. Install [Docker](https://www.docker.com/) and the **Dev Containers** extension for VS Code.
+2. Open the repo folder in VS Code.
+3. Press `Ctrl+Shift+P` and run **Dev Containers: Reopen in Container**. The first build takes a few minutes.
+4. In the terminal inside the container, check Java with `java -version`. It should show 25.
+5. Build a mod with `cd <mod-folder> && ./gradlew build`.
+
+The container is for building. To test the game, copy the built jar into your Minecraft `mods` folder.
+
+If you don't want Docker, install JDK 25 another way, for example with SDKMAN on Linux or macOS.
 
 ## Adding a mod
 

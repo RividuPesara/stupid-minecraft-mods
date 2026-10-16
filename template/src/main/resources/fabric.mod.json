@@ -7,6 +7,10 @@
 	"authors": [
 		"Your name"
 	],
+	"contact": {
+		"homepage": "https://github.com/RividuPesara/Stupid-minecraft-mods",
+		"sources": "https://github.com/RividuPesara/Stupid-minecraft-mods"
+	},
 	"license": "CC0-1.0",
 	"icon": "assets/template-mod/icon.png",
 	"environment": "*",

@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "mobduplicator",
+	"version": "${version}",
+	"name": "mobduplicator",
+	"description": "Mob drops are replaced with random items, each stack multiplied by a random amount.",
+	"authors": [
+		"RividuPesara"
+	],
+	"contact": {
+		"homepage": "https://github.com/RividuPesara/Stupid-minecraft-mods",
+		"sources": "https://github.com/RividuPesara/Stupid-minecraft-mods"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mobduplicator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.peshi.mobduplicator.Mobduplicator"
+		]
+	},
+	"mixins": [
+		"mobduplicator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=25",
+		"fabric-api": ">=${fabric_api_version}"
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "stupid-minecraft-mods",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "25",
+			"distribution": "tem"
+		}
+	},
+	"mounts": [
+		"source=stupid-mods-gradle-cache,target=/home/vscode/.gradle,type=volume"
+	],
+	"postCreateCommand": "sudo chown vscode:vscode /home/vscode/.gradle",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack"
+			]
+		}
+	}
+}
