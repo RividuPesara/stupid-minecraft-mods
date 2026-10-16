@@ -1,0 +1,66 @@
+name: build
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  find-mods:
+    runs-on: ubuntu-24.04
+    outputs:
+      mods: ${{ steps.mods.outputs.mods }}
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: find mods to build
+        id: mods
+        shell: bash
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          all=$(find . -mindepth 2 -maxdepth 2 -name gradlew -printf '%h\n' | sed 's|^\./||' | sort)
+          mods="$all"
+
+          if [ "$EVENT" = "pull_request" ]; then
+            # docs and the dev container never change a build
+            touched=$(git diff --name-only "$BASE" HEAD \
+              | grep -vE '^[^/]+\.md$|^\.devcontainer/' \
+              | cut -d/ -f1 | sort -u || true)
+            outside=$(printf '%s\n' "$touched" | sed '/^$/d' | grep -vxF -f <(printf '%s\n' "$all") || true)
+            if [ -z "$outside" ]; then
+              mods="$touched"
+            fi
+          fi
+
+          json=$(printf '%s\n' $mods | sed '/^$/d' | jq -R . | jq -sc .)
+          echo "building: $json"
+          echo "mods=$json" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: find-mods
+    if: needs.find-mods.outputs.mods != '[]'
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        mod: ${{ fromJson(needs.find-mods.outputs.mods) }}
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v6
+      - name: validate gradle wrapper
+        uses: gradle/actions/wrapper-validation@v6
+      - name: setup jdk
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: setup gradle
+        uses: gradle/actions/setup-gradle@v6
+      - name: build
+        working-directory: ${{ matrix.mod }}
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build

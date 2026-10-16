@@ -1,0 +1,79 @@
+name: release
+on:
+  push:
+    tags:
+      - '*-v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'existing tag to release, for example mobduplicator-v1.0.0+26.3'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: checkout tag
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.TAG }}
+          fetch-depth: 0
+      - name: read mod, version and minecraft version from tag
+        shell: bash
+        run: |
+          if [[ ! "$TAG" =~ ^([a-z][a-z0-9_-]*)-v([0-9][^+]*)\+(.+)$ ]]; then
+            echo "tag must look like <mod-id>-v<version>+<minecraft version>, got $TAG"
+            exit 1
+          fi
+          MOD="${BASH_REMATCH[1]}"
+          VERSION="${BASH_REMATCH[2]}"
+          MC="${BASH_REMATCH[3]}"
+
+          if [ "$MOD" = "template" ]; then
+            echo "the template is never released"
+            exit 1
+          fi
+          if [ ! -f "$MOD/gradlew" ]; then
+            echo "no mod folder named $MOD"
+            exit 1
+          fi
+          grep -qx "version=$VERSION" "$MOD/gradle.properties" || {
+            echo "$MOD/gradle.properties version does not match $VERSION"
+            exit 1
+          }
+          grep -qx "minecraft_version=$MC" "$MOD/gradle.properties" || {
+            echo "$MOD/gradle.properties minecraft_version does not match $MC"
+            exit 1
+          }
+          git merge-base --is-ancestor HEAD origin/main || {
+            echo "tag $TAG is not on main"
+            exit 1
+          }
+
+          echo "MOD=$MOD" >> "$GITHUB_ENV"
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+          echo "MC=$MC" >> "$GITHUB_ENV"
+      - name: setup jdk
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: setup gradle
+        uses: gradle/actions/setup-gradle@v6
+      - name: build
+        working-directory: ${{ env.MOD }}
+        run: |
+          chmod +x ./gradlew
+          ./gradlew build
+      - name: create release
+        run: |
+          gh release create "$TAG" "$MOD/build/libs/$MOD-$VERSION.jar" \
+            --title "$MC · $MOD $VERSION" \
+            --notes "" \
+            --latest=false
