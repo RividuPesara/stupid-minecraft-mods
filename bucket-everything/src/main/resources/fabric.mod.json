@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "bucket-everything",
+	"version": "${version}",
+	"name": "Bucket Everything",
+	"description": "Use an empty bucket on any mob to carry it around, with advancements for the best catches.",
+	"authors": [
+		"RividuPesara"
+	],
+	"contact": {
+		"homepage": "https://github.com/RividuPesara/Stupid-minecraft-mods",
+		"sources": "https://github.com/RividuPesara/Stupid-minecraft-mods"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bucket-everything/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.peshi.bucketeverything.BucketEverything"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
+		"java": ">=25",
+		"fabric-api": ">=${fabric_api_version}"
+	}
+}

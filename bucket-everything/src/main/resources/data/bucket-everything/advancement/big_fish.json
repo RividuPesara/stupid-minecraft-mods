@@ -1,0 +1,34 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "elder_guardian": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:elder_guardian"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:prismarine_shard"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.big_fish.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.big_fish.description"
+    },
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "elder_guardian"
+    ]
+  ]
+}

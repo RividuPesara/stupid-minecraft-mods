@@ -1,0 +1,33 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "iron_golem": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:iron_golem"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_block"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.heavy_metal.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.heavy_metal.description"
+    }
+  },
+  "requirements": [
+    [
+      "iron_golem"
+    ]
+  ]
+}

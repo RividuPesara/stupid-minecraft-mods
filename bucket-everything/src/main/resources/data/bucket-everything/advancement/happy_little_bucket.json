@@ -1,0 +1,33 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "happy_ghast": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:happy_ghast"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:ghast_tear"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.happy_little_bucket.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.happy_little_bucket.description"
+    }
+  },
+  "requirements": [
+    [
+      "happy_ghast"
+    ]
+  ]
+}

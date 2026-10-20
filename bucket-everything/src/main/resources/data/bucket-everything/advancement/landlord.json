@@ -1,0 +1,33 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "villager": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.landlord.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.landlord.description"
+    }
+  },
+  "requirements": [
+    [
+      "villager"
+    ]
+  ]
+}

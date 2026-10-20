@@ -1,0 +1,34 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "warden": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:warden"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:sculk_shrieker"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.shh.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.shh.description"
+    },
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "warden"
+    ]
+  ]
+}

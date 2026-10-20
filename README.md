@@ -8,6 +8,7 @@ Current Minecraft version: **26.3** (Fabric Loader 0.19.5, Fabric API 0.163.0).
 |---|---|
 | [template](template/) | Starter mod to copy when making a new one. |
 | [mobduplicator](mobduplicator/) | Mob drops become random items, each multiplied by a random amount. Change the range with `/mobduplicator multiplier <min> <max>`. |
+| [bucket-everything](bucket-everything/) | Use an empty bucket on any mob to carry it around. Comes with its own advancements. |
 
 Each mod lives in its own folder, named after its mod ID.
 

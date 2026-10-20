@@ -1,0 +1,587 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "minecraft:allay",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/allay"
+        }
+      },
+      {
+        "when": "minecraft:armadillo",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/armadillo"
+        }
+      },
+      {
+        "when": "minecraft:bat",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/bat"
+        }
+      },
+      {
+        "when": "minecraft:bee",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/bee"
+        }
+      },
+      {
+        "when": "minecraft:blaze",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/blaze"
+        }
+      },
+      {
+        "when": "minecraft:bogged",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/bogged"
+        }
+      },
+      {
+        "when": "minecraft:breeze",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/breeze"
+        }
+      },
+      {
+        "when": "minecraft:camel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/camel"
+        }
+      },
+      {
+        "when": "minecraft:camel_husk",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/camel_husk"
+        }
+      },
+      {
+        "when": "minecraft:cat",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/cat"
+        }
+      },
+      {
+        "when": "minecraft:cave_spider",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/cave_spider"
+        }
+      },
+      {
+        "when": "minecraft:chicken",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/chicken"
+        }
+      },
+      {
+        "when": "minecraft:copper_golem",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/copper_golem"
+        }
+      },
+      {
+        "when": "minecraft:cow",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/cow"
+        }
+      },
+      {
+        "when": "minecraft:creaking",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/creaking"
+        }
+      },
+      {
+        "when": "minecraft:creeper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/creeper"
+        }
+      },
+      {
+        "when": "minecraft:dolphin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/dolphin"
+        }
+      },
+      {
+        "when": "minecraft:donkey",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/donkey"
+        }
+      },
+      {
+        "when": "minecraft:drowned",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/drowned"
+        }
+      },
+      {
+        "when": "minecraft:elder_guardian",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/elder_guardian"
+        }
+      },
+      {
+        "when": "minecraft:enderman",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/enderman"
+        }
+      },
+      {
+        "when": "minecraft:endermite",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/endermite"
+        }
+      },
+      {
+        "when": "minecraft:evoker",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/evoker"
+        }
+      },
+      {
+        "when": "minecraft:fox",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/fox"
+        }
+      },
+      {
+        "when": "minecraft:frog",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/frog"
+        }
+      },
+      {
+        "when": "minecraft:ghast",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/ghast"
+        }
+      },
+      {
+        "when": "minecraft:happy_ghast",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/happy_ghast"
+        }
+      },
+      {
+        "when": "minecraft:giant",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/giant"
+        }
+      },
+      {
+        "when": "minecraft:glow_squid",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/glow_squid"
+        }
+      },
+      {
+        "when": "minecraft:goat",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/goat"
+        }
+      },
+      {
+        "when": "minecraft:guardian",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/guardian"
+        }
+      },
+      {
+        "when": "minecraft:hoglin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/hoglin"
+        }
+      },
+      {
+        "when": "minecraft:horse",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/horse"
+        }
+      },
+      {
+        "when": "minecraft:husk",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/husk"
+        }
+      },
+      {
+        "when": "minecraft:illusioner",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/illusioner"
+        }
+      },
+      {
+        "when": "minecraft:iron_golem",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/iron_golem"
+        }
+      },
+      {
+        "when": "minecraft:llama",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/llama"
+        }
+      },
+      {
+        "when": "minecraft:magma_cube",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/magma_cube"
+        }
+      },
+      {
+        "when": "minecraft:mooshroom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/mooshroom"
+        }
+      },
+      {
+        "when": "minecraft:mule",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/mule"
+        }
+      },
+      {
+        "when": "minecraft:nautilus",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/nautilus"
+        }
+      },
+      {
+        "when": "minecraft:ocelot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/ocelot"
+        }
+      },
+      {
+        "when": "minecraft:panda",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/panda"
+        }
+      },
+      {
+        "when": "minecraft:parched",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/parched"
+        }
+      },
+      {
+        "when": "minecraft:parrot",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/parrot"
+        }
+      },
+      {
+        "when": "minecraft:phantom",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/phantom"
+        }
+      },
+      {
+        "when": "minecraft:pig",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/pig"
+        }
+      },
+      {
+        "when": "minecraft:piglin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/piglin"
+        }
+      },
+      {
+        "when": "minecraft:piglin_brute",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/piglin_brute"
+        }
+      },
+      {
+        "when": "minecraft:pillager",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/pillager"
+        }
+      },
+      {
+        "when": "minecraft:polar_bear",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/polar_bear"
+        }
+      },
+      {
+        "when": "minecraft:rabbit",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/rabbit"
+        }
+      },
+      {
+        "when": "minecraft:ravager",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/ravager"
+        }
+      },
+      {
+        "when": "minecraft:sheep",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/sheep"
+        }
+      },
+      {
+        "when": "minecraft:shulker",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/shulker"
+        }
+      },
+      {
+        "when": "minecraft:silverfish",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/silverfish"
+        }
+      },
+      {
+        "when": "minecraft:skeleton",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/skeleton"
+        }
+      },
+      {
+        "when": "minecraft:skeleton_horse",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/skeleton_horse"
+        }
+      },
+      {
+        "when": "minecraft:slime",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/slime"
+        }
+      },
+      {
+        "when": "minecraft:sniffer",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/sniffer"
+        }
+      },
+      {
+        "when": "minecraft:snow_golem",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/snow_golem"
+        }
+      },
+      {
+        "when": "minecraft:spider",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/spider"
+        }
+      },
+      {
+        "when": "minecraft:squid",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/squid"
+        }
+      },
+      {
+        "when": "minecraft:stray",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/stray"
+        }
+      },
+      {
+        "when": "minecraft:strider",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/strider"
+        }
+      },
+      {
+        "when": "minecraft:trader_llama",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/trader_llama"
+        }
+      },
+      {
+        "when": "minecraft:turtle",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/turtle"
+        }
+      },
+      {
+        "when": "minecraft:vex",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/vex"
+        }
+      },
+      {
+        "when": "minecraft:villager",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/villager"
+        }
+      },
+      {
+        "when": "minecraft:vindicator",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/vindicator"
+        }
+      },
+      {
+        "when": "minecraft:wandering_trader",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/wandering_trader"
+        }
+      },
+      {
+        "when": "minecraft:warden",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/warden"
+        }
+      },
+      {
+        "when": "minecraft:witch",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/witch"
+        }
+      },
+      {
+        "when": "minecraft:wither",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/wither"
+        }
+      },
+      {
+        "when": "minecraft:wither_skeleton",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/wither_skeleton"
+        }
+      },
+      {
+        "when": "minecraft:wolf",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/wolf"
+        }
+      },
+      {
+        "when": "minecraft:zoglin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zoglin"
+        }
+      },
+      {
+        "when": "minecraft:zombie",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zombie"
+        }
+      },
+      {
+        "when": "minecraft:zombie_horse",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zombie_horse"
+        }
+      },
+      {
+        "when": "minecraft:zombie_nautilus",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zombie_nautilus"
+        }
+      },
+      {
+        "when": "minecraft:zombie_villager",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zombie_villager"
+        }
+      },
+      {
+        "when": "minecraft:zombified_piglin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bucket-everything:item/mob/zombified_piglin"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "bucket-everything:item/mob_bucket"
+    }
+  }
+}
