@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "bucketed": {
+      "trigger": "bucket-everything:bucketed_mob"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:bucket"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.root.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.root.description"
+    },
+    "background": "minecraft:gui/advancements/backgrounds/husbandry",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "requirements": [
+    [
+      "bucketed"
+    ]
+  ]
+}

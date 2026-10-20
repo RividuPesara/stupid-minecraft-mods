@@ -1,0 +1,24 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "released": {
+      "trigger": "bucket-everything:released_mob"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:bucket"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.reverse_uno.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.reverse_uno.description"
+    }
+  },
+  "requirements": [
+    [
+      "released"
+    ]
+  ]
+}

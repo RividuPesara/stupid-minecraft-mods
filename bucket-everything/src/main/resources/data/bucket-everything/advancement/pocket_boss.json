@@ -1,0 +1,34 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "wither": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:wither"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.pocket_boss.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.pocket_boss.description"
+    },
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "wither"
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "bucket-everything:root",
+  "criteria": {
+    "creeper": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:creeper"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:creeper_head"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.portable_explosive.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.portable_explosive.description"
+    }
+  },
+  "requirements": [
+    [
+      "creeper"
+    ]
+  ]
+}

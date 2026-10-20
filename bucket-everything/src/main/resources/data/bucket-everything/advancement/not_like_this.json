@@ -1,0 +1,35 @@
+{
+  "parent": "bucket-everything:portable_explosive",
+  "criteria": {
+    "charged_creeper": {
+      "trigger": "bucket-everything:bucketed_mob",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:creeper",
+            "minecraft:nbt": "{powered:1b}"
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.bucket-everything.not_like_this.title"
+    },
+    "description": {
+      "translate": "advancements.bucket-everything.not_like_this.description"
+    },
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "charged_creeper"
+    ]
+  ]
+}
